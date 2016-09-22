@@ -19,7 +19,7 @@ function submitIt() {
 
 function pressIt() {
   $('input').on('keydown', e => {
-    if (e.key === 'g') alert("Gee!!!");
+    if ('G' === String.fromCharCode(e.which)) alert("Gee!!!");
   })
 }
 
