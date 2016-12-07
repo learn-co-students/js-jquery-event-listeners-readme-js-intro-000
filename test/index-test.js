@@ -26,9 +26,9 @@ describe('Selectors', () => {
       window.pressIt();
 
       const input = window.$('#typing');
-      const event = window.$.Event('keydown', { which: 71 })
+      const event = window.$.Event('keydown', { which:71 })
       input.trigger(event)
-
+      console.log("KB"+event.which)
       expect(window.alert).toHaveBeenCalled()
     })
 
