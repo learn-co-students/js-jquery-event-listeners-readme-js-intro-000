@@ -8,16 +8,15 @@ function frameIt(){
 
 function pressIt(){
    $('#typing').on('keydown', function(e){
-    if(e.which === 103){
+    if(e.which === 71 || e.detail === 71){
       alert('You pressed g')
     }
   })
-
 }
 
 function submitIt(){
-  $('type[submit]').on('submit', function(){
-    alert('"Your form is going to be submitted now."')
+  $('form').on('submit', function(){
+    alert('Your form is going to be submitted now.')
   })
 }
 
