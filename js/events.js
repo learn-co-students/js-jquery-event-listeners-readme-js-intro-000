@@ -8,21 +8,33 @@ function getIt()
 
 function frameIt()
 {
-  f
+  $('head').append('<style> .tasty {border: 3px solid #ff0000;} </style>')
+  $('img').on("load", function(){
+    $('img').addClass("tasty")
+  });
 }
 
 function pressIt()
 {
-  f
+  $('input#typing').on("keydown", function(e){
+    if(e.which === 71) {
+      alert("You pressed 'g'")
+    }
+  });
 }
 
 function submitIt()
 {
-  f
+  $('form').on("submit", function(){
+    alert("Your form is going to be submitted now.")
+  });
 }
 
 
 $(document).ready(function()
 {
-  f
+  getIt();
+  frameIt();
+  pressIt();
+  submitIt();
 });
