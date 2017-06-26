@@ -1,7 +1,28 @@
 //define functions here
+function getIt()
+{
+  $('p').on("click", function(){
+    alert('Hey!')
+  });
+}
 
-$(document).ready(function(){
+function frameIt()
+{
+  f
+}
 
-// call functions here
+function pressIt()
+{
+  f
+}
 
+function submitIt()
+{
+  f
+}
+
+
+$(document).ready(function()
+{
+  f
 });
