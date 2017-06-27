@@ -8,8 +8,8 @@ function getIt()
 
 function frameIt()
 {
-  $('head').append('<style> .tasty {border: 3px solid #ff0000;} </style>')
-  $('img').on("load", function(){
+  $('head').append('<style> .tasty {border: medium solid red;} </style>')
+  $('img').on('load', function(){
     $('img').addClass("tasty")
   });
 }
