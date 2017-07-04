@@ -1,7 +1,25 @@
-//define functions here
+function getIt() {
+  $('p').click(function() {
+    alert('Hey!');
+  })
+}
 
-$(document).ready(function(){
+function frameIt() {
+  $('img').load(function() {
+    $(this).attr('class', 'tasty');
+  })
+}
 
-// call functions here
+function pressIt() {
+  $('#typing').keydown(function(key) {
+    if(key.which === 71) {
+      alert('You have pressed the g key');
+    }
+  })
+}
 
-});
+function submitIt() {
+  $('form').submit(function() {
+    alert('Your form is going to be submitted now.');
+  })
+}
