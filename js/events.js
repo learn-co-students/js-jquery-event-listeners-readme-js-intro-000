@@ -1,7 +1,7 @@
 //define functions here
 function getIt() {
   $('p').on('click', function() {
-    alert('Hey!');
+    alert('Hey!')
   })
 }
 
@@ -12,8 +12,8 @@ function frameIt() {
 }
 
 function pressIt() {
-  $('#typing').on('keyDown' function(key) {
-    if(key.which === 71) {
+  $('input').on('keydown', function(key) {
+    if(key.which == 71) {
       alert('You have pressed G!')
     }
   })
@@ -33,4 +33,5 @@ getIt()
 frameIt()
 pressIt()
 submitIt()
+
 })
