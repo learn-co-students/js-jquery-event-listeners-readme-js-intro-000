@@ -141,9 +141,7 @@ functions outside of the document ready, and call them inside of this. This way,
 your tests will run as expected and you can test your code in the browser as
 well.
 
-+ Define a function `getIt` that does not accept a parameter. The function
-should bind a `click` event to the `p` tag. When the paragraph is clicked, the
-function should alert `"Hey!"`.
++ Define a function getIt that does not accept a parameter. The function should bind a click event to the p tag. When the paragraph is clicked, the function should alert "Hey!".
 
 + Define a function `frameIt` that does not accept a parameter. The function
 should bind the `load` event that adds the class `tasty` to the image to add a
