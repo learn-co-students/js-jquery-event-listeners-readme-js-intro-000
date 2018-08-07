@@ -8,21 +8,23 @@ function getIt() {
 
 function frameIt() {
   $('img').on('load', function(){
-    'img'.addClass("tasty");
+    $('img').addClass("tasty");
   });
 }
 
 function pressIt() {
-  $(document).on('keydown', function(){
-    if(key.which == 70){
-      alert('g was pressed');
+  $(document).on('keydown', function(key){
+    console.log(key)
+    console.log(key.which)
+    if(key.which == 71){
+      alert('G was pressed');
     }
   });
 }
 
 function submitIt() {
   $("form").on("submit", function() {
-    alert('your form is going to be submitted now');
+    alert('Your form is going to be submitted now.');
     return;
   });
 }
