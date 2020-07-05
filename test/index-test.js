@@ -21,7 +21,7 @@ describe('Selectors', () => {
 
   describe('pressIt()', () => {
     it('pressIt() binds an event that alerts the user when the G key was pressed down', function() {
-      window.alert = expect.createSpy()
+//      window.alert = expect.createSpy()
 
       window.pressIt();
 
