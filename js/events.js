@@ -5,13 +5,14 @@ $("p").on("Click", getIt);
 
 
 function frameIt() {
-  $('.tasty').css('background', 'red');
+  $('.tasty').on('load', function() {
+     $('.tasty').css('background', 'red');
+  });
 }
-$(".tasty").on("load", frameIt);
 
 
 function pressIt() {
-  $("input").keydown(function() {
+  $("input").on('keydown', function(key) {
     if(key.which == 71) {
       alert("You pressed G key");
      }
@@ -27,4 +28,5 @@ $(document).ready(function(){
   getIt();
   pressIt();
   submitIt();
+  frameIt();
 });
