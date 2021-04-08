@@ -34,9 +34,9 @@ var frameIt = () =>
   }
 var pressIt = () =>
   {
-    $('input').on('keydown', (e)=>
+    $('#typing').on('keydown', (e)=>
     {
-      if(e.key === 'G')
+      if(e.which === 71)
         {
           alert('Yes!');
         }
